@@ -9,7 +9,7 @@
   "releasenote": "Remove trace statements.",
   "contributors": ["IBwWG"],
   "dependencies": {
-    "flixel": "4.0.0",
-    "openfl": "3.6.0"
+    "flixel": "",
+    "openfl": ""
   }
 }
