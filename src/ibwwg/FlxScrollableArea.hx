@@ -232,7 +232,7 @@ class FlxScrollableArea extends FlxCamera
 		super.destroy();
 	}
 	
-	function set_content(value:FlxRect):FlxRect 
+	public function set_content(value:FlxRect):FlxRect 
 	{
 		content = value;
 		if (viewPort != null) // not during the constructor, but normally...

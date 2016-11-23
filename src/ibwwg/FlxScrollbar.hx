@@ -38,7 +38,7 @@ class FlxScrollbar extends FlxSpriteGroup
 	 * @param	Colour					The colour of the draggable part of the scrollbar.  The rest of it will be the same colour added to FlxColor.GRAY.
 	 * @param	Camera					The parent scrollable area to control with this scrollbar.
 	 * @param	InitiallyVisible		Bool to set .visible to.
- 	 * @param	State					Which state to add the scrollbar(s) to.  If you're in a FlxSubState with its parent paused, pass it in here.
+		* @param	State					Which state to add the scrollbar(s) to.  If you're in a FlxSubState with its parent paused, pass it in here.
 	 * @param	MouseWheelMultiplier	How much to multiply mouse wheel deltas by.  Set to 0 to disable mouse wheeling.  Default 100.
 	 */
 	public function new( X:Float, Y:Float, Width:Float, Height:Float, Orientation:FlxScrollbarOrientation, Colour:FlxColor, Camera:FlxScrollableArea, ?InitiallyVisible:Bool=false, ?State:FlxState, ?MouseWheelMultiplier:Int=100 ) 
