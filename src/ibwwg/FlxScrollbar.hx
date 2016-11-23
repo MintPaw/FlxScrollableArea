@@ -18,8 +18,8 @@ class FlxScrollbar extends FlxSpriteGroup
 	private var _orientation:FlxScrollbarOrientation;
 	private var _colour:FlxColor;
 	private var _minProportion:Float = 0.1; // smallest barProportion of the track that the bar can be
-	private var _track:FlxSprite; // Sits under the bar, and takes up the whole side.
-	private var _bar:FlxSprite;
+	public var _track:FlxSprite; // Sits under the bar, and takes up the whole side.
+	public var _bar:FlxSprite;
 	private var _stale:Bool = true;
 	private var _state:FlxState;
 	private var _camera:FlxScrollableArea;

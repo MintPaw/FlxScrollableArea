@@ -7,6 +7,7 @@ import ibwwg.FlxScrollbar.FlxScrollbarOrientation;
 import flixel.FlxCamera;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
+import flixel.math.FlxMath;
 import flixel.util.FlxColor;
 import openfl.geom.Rectangle;
 
@@ -246,6 +247,13 @@ class FlxScrollableArea extends FlxCamera
 	{
 		_horizontalScrollbar.forceRedraw();
 		_verticalScrollbar.forceRedraw();
+	}
+
+	public function unScroll():Void {
+		_horizontalScrollbar._bar.x = 0;
+		_verticalScrollbar._bar.y = 0;
+		onResize();
+		redrawBars();
 	}
 }
 enum ResizeMode {
